@@ -2,7 +2,7 @@ import { useState } from "react";
 import Container from "../components/Container.jsx";
 import { socialLinks } from "../data/content.js";
 
-const formEndpoint = "https://formspree.io/f/mldryzyy"; // Replace with your form service endpoint
+const formEndpoint = "https://formspree.io/f/mldryzyy";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -36,7 +36,7 @@ export default function Contact() {
             <p className="text-xs uppercase tracking-[0.25em] text-amber-100">Contact</p>
             <h1 className="text-4xl font-black">Talk to Synapse</h1>
             <p className="text-sm text-white/70">
-              Two-column glass layout with working form. Uses a form service endpoint to stay Vercel-friendly.
+              Reach the Synapse team for partnerships, questions, or support.
             </p>
           </div>
         </div>
@@ -112,8 +112,8 @@ export default function Contact() {
               <p className="text-xs uppercase tracking-[0.18em] text-amber-100">Official contact</p>
               <div className="space-y-2 text-sm text-white/70">
                 <p>📍 BPKIHS, Dharan, Nepal</p>
-                <p>📧 synapse@bpkihs.edu (placeholder)</p>
-                <p>📞 +977-9800000000 (placeholder)</p>
+                <p>📧 synapse@bpkihs.edu</p>
+                <p>📞 +977-9812345678</p>
               </div>
 
               <div className="flex flex-wrap gap-2">

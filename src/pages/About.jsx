@@ -29,8 +29,7 @@ export default function About() {
             </p>
             <h1 className="text-4xl font-black">BPKIHS • SWS • Synapse</h1>
             <p className="mt-2 max-w-2xl text-sm text-white/70">
-              Three pillars, one festival. Hover to reveal details. Orange glows
-              highlight interactive cards.
+              Three pillars, one festival. Explore the institutions shaping Synapse 2026.
             </p>
           </div>
         </div>
@@ -68,7 +67,7 @@ export default function About() {
                 </div>
                 <p className="text-sm text-white/80">{section.body}</p>
                 <p className="text-xs font-medium text-amber-200/80">
-                  Tap to learn more
+                  Discover the story
                 </p>
               </div>
             </button>
@@ -87,6 +86,5 @@ export default function About() {
     </section>
   );
 }
-
 
 

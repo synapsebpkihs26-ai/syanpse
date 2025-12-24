@@ -102,25 +102,24 @@ export default function Home() {
               </div>
               <p className="text-lg font-bold">Stay in the loop</p>
               <p className="text-sm text-white/70">
-                Continuous social feed rotation with manual controls. Tap a platform to pause and
-                jump to the latest post.
+                Follow real-time highlights from Synapse 2026 across our official channels.
               </p>
               <div className="mt-auto flex flex-wrap gap-3">
                 <a
                   href="https://www.instagram.com/synapsebpkihs2026"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-white/5 px-5 py-3 text-xs font-semibold text-white/80 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300/60"
+                  className="rounded-full bg-white/5 px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/80 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300/60"
                 >
-                  Synapse Instagram
+                  SYNAPSE INSTAGRAM
                 </a>
                 <a
                   href="https://www.facebook.com/synapsebpkihs2026"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-white/5 px-5 py-3 text-xs font-semibold text-white/80 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300/60"
+                  className="rounded-full bg-white/5 px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/80 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300/60"
                 >
-                  Synapse Facebook
+                  SYNAPSE FACEBOOK
                 </a>
               </div>
             </div>
@@ -158,6 +157,10 @@ export default function Home() {
                 }}
                 className={`relative cursor-pointer overflow-hidden rounded-3xl bg-white/5 p-5 ring-1 ring-white/10 transition hover:-translate-y-1 hover:shadow-ember focus:outline-none focus:ring-2 focus:ring-amber-300/60 ${
                   cat.highlight ? "ring-2 ring-amber-300/60" : ""
+                } ${
+                  cat.id === "sports"
+                    ? "shadow-[0_0_35px_rgba(249,115,22,0.3)] ring-amber-300/60"
+                    : ""
                 }`}
               >
                 <div
@@ -169,7 +172,9 @@ export default function Home() {
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-amber-100">
                     {cat.title}
                   </p>
-                  <p className="text-xs text-white/70">Orange glow on sports to match the brief.</p>
+                  <p className="text-xs text-white/70">
+                    Signature matches, stadium rivalries, and spotlight tournaments.
+                  </p>
                   <div className="mt-3 flex flex-wrap gap-2 text-[12px] text-white/70">
                     {cat.events.slice(0, 3).map((ev) => (
                       <span

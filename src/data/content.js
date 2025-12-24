@@ -3,7 +3,7 @@ import bannerOne from "../assets/picture/banner-1.svg";
 import bannerTwo from "../assets/picture/banner-2.svg";
 import bannerThree from "../assets/picture/banner-3.svg";
 
-export const googleFormUrl = "https://forms.gle/placeholder-form";
+export const googleFormUrl = "https://forms.gle/synapse2026-registration";
 
 export const heroSlides = [
   {
@@ -42,48 +42,30 @@ export const socialLinks = [
   },
 ];
 
-export const featuredSocials = [
+export const socialSpotlightPosts = [
   {
     platform: "Instagram",
-    title: "Instagram update 01",
-    url: "https://www.instagram.com/synapsebpkihs2026",
-    handle: "@synapsebpkihs2026",
-    blurb: "Latest highlights, stories, and announcements.",
-    embedUrl: "https://www.instagram.com/synapsebpkihs2026/embed",
-    image:
-      "https://images.unsplash.com/photo-1453745558060-956c8f51f9df?auto=format&fit=crop&w=900&q=80",
+    title: "Synapse highlight: Opening week",
+    description: "A first look at the energy building across campus.",
+    url: "https://www.instagram.com/p/DSpNvuXitw1/",
+    embedUrl: "https://www.instagram.com/p/DSpNvuXitw1/embed",
+    previewImage: "https://www.instagram.com/p/DSpNvuXitw1/media/?size=l",
   },
   {
     platform: "Instagram",
-    title: "Instagram update 02",
-    url: "https://www.instagram.com/synapsebpkihs2026",
-    handle: "@synapsebpkihs2026",
-    blurb: "Fresh reels and crowd moments from Synapse 2026.",
-    embedUrl: "https://www.instagram.com/synapsebpkihs2026/embed",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+    title: "Synapse spotlight: Crowd moments",
+    description: "Cheers, colors, and the festival buzz in motion.",
+    url: "https://www.instagram.com/p/DRRX2DBAAwf/",
+    embedUrl: "https://www.instagram.com/p/DRRX2DBAAwf/embed",
+    previewImage: "https://www.instagram.com/p/DRRX2DBAAwf/media/?size=l",
   },
   {
-    platform: "Facebook",
-    title: "Facebook update 01",
-    url: "https://www.facebook.com/synapsebpkihs2026",
-    handle: "facebook.com/synapsebpkihs2026",
-    blurb: "Updates, schedules, and community posts.",
-    embedUrl:
-      "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsynapsebpkihs2026&tabs=timeline&width=500&height=320&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false",
-    image:
-      "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    platform: "Facebook",
-    title: "Facebook update 02",
-    url: "https://www.facebook.com/synapsebpkihs2026",
-    handle: "facebook.com/synapsebpkihs2026",
-    blurb: "More community updates and event recaps.",
-    embedUrl:
-      "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsynapsebpkihs2026&tabs=timeline&width=500&height=320&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false",
-    image:
-      "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=900&q=80",
+    platform: "Instagram",
+    title: "Synapse spotlight: Sports nights",
+    description: "A preview of the matchups and late-night rallies ahead.",
+    url: "https://www.instagram.com/p/DRFLRPNiiXs/",
+    embedUrl: "https://www.instagram.com/p/DRFLRPNiiXs/embed",
+    previewImage: "https://www.instagram.com/p/DRFLRPNiiXs/media/?size=l",
   },
 ];
 
@@ -887,275 +869,6 @@ export const teamSections = [
         name: "Arjun Yadav",
         role: "Member",
       },
-    ],
-  },
-  {
-    title: "Sub-committee: IT Team",
-    members: [
-      {
-        name: "Dr. Karan Kumar Yadav",
-        role: "Lead",
-      },
-      {
-        name: "Dr. Suyog Jha",
-        role: "Co-Lead",
-      },
-      {
-        name: "Sweksha Niraula",
-        role: "Co-Lead",
-      },
-      {
-        name: "Manish Mehta",
-        role: "Co-Lead",
-      },
-      {
-        name: "Prabha Panthi",
-        role: "Co-Lead",
-      },
-    ],
-  },
-  {
-    title: "Sub-committee: Sports",
-    members: [
-      {
-        name: "Prashant Shahi",
-        role: "Lead",
-      },
-      {
-        name: "Milan Thapa",
-        role: "Co-Lead",
-      },
-      {
-        name: "Salomit Subba",
-        role: "Co-Lead",
-      },
-      {
-        name: "Nitesh Shrestha",
-        role: "Co-Lead",
-      },
-      {
-        name: "Sailendra Khatri",
-        role: "Co-Lead",
-      },
-    ],
-  },
-  {
-    title: "Students’ Welfare Society Office Bearers (Left Panel)",
-    members: [
-      {
-        name: "Nabraj Kumar Dev",
-        role: "President",
-      },
-      {
-        name: "Dr. Om Shanti Rajak",
-        role: "IPP",
-      },
-      {
-        name: "MD. Mahamood Nuree",
-        role: "Senior Vice-President",
-      },
-      {
-        name: "Dr. Bishal Gurung",
-        role: "Vice President",
-      },
-      {
-        name: "Sadikshya Neupane",
-        role: "Vice President",
-      },
-      {
-        name: "Kantipur Bastola",
-        role: "Vice President",
-      },
-      {
-        name: "Nagendra Yadav",
-        role: "Vice President",
-      },
-      {
-        name: "Subin Kumar Sah",
-        role: "General Secretary",
-        description: "Phone: 9814805523 • Phone: 9844420535",
-      },
-      {
-        name: "Ram Udgar Yadav",
-        role: "Secretary",
-      },
-      {
-        name: "Dr. Hardik Goyal",
-        role: "Treasurer",
-      },
-    ],
-  },
-  {
-    title: "Students’ Welfare Society Members",
-    members: [
-      {
-        name: "Dr. Amol Kumar Yadav",
-        role: "Member",
-      },
-      {
-        name: "Dr. Bishnu Kharel",
-        role: "Member",
-      },
-      {
-        name: "Dr. Tarannum Bano",
-        role: "Member",
-      },
-      {
-        name: "Rachana Puri",
-        role: "Member",
-      },
-      {
-        name: "Jiwan Narayan K. Chauhan",
-        role: "Member",
-      },
-      {
-        name: "MD. Asrarul Ansari",
-        role: "Member",
-      },
-      {
-        name: "Sandip B.K.",
-        role: "Member",
-      },
-      {
-        name: "Satarohan Yadav",
-        role: "Member",
-      },
-      {
-        name: "Shudib Shoni",
-        role: "Member",
-      },
-      {
-        name: "Sakrila Ghale Gurung",
-        role: "Member",
-      },
-      {
-        name: "Bhabishya Bista",
-        role: "Member",
-      },
-      {
-        name: "Bijay Kumar Yadav",
-        role: "Member",
-      },
-      {
-        name: "Gotri Nath",
-        role: "Member",
-      },
-      {
-        name: "Pratibha Yadav",
-        role: "Member",
-      },
-      {
-        name: "Praveen Bhattarai",
-        role: "Member",
-      },
-      {
-        name: "Yatendra Yadav",
-        role: "Member",
-      },
-      {
-        name: "Arjun Yadav",
-        role: "Member",
-      },
-    ],
-  },
-  {
-    title: "Students’ Welfare Society Members",
-    members: [
-      {
-        name: "Dr. Amol Kumar Yadav",
-        role: "Member",
-      },
-      {
-        name: "Dr. Bishnu Kharel",
-        role: "Member",
-      },
-      {
-        name: "Dr. Tarannum Bano",
-        role: "Member",
-      },
-      {
-        name: "Rachana Puri",
-        role: "Member",
-      },
-      {
-        name: "Jiwan Narayan K. Chauhan",
-        role: "Member",
-      },
-      {
-        name: "MD. Asrarul Ansari",
-        role: "Member",
-      },
-      {
-        name: "Sandip B.K.",
-        role: "Member",
-      },
-      {
-        name: "Satarohan Yadav",
-        role: "Member",
-      },
-      {
-        name: "Shudib Shoni",
-        role: "Member",
-      },
-      {
-        name: "Sakrila Ghale Gurung",
-        role: "Member",
-      },
-      {
-        name: "Bhabishya Bista",
-        role: "Member",
-      },
-      {
-        name: "Bijay Kumar Yadav",
-        role: "Member",
-      },
-      {
-        name: "Gotri Nath",
-        role: "Member",
-      },
-      {
-        name: "Pratibha Yadav",
-        role: "Member",
-      },
-      {
-        name: "Praveen Bhattarai",
-        role: "Member",
-      },
-      {
-        name: "Yatendra Yadav",
-        role: "Member",
-      },
-      {
-        name: "Arjun Yadav",
-        role: "Member",
-        name: "Subin Kumar Sah",
-        role: "General Secretary",
-        description: "Phone: 9814805523 • Phone: 9844420535",
-      },
-      { name: "Ram Udgar Yadav", role: "Secretary" },
-      { name: "Dr. Hardik Goyal", role: "Treasurer" },
-    ],
-  },
-  {
-    title: "Students’ Welfare Society Members",
-    members: [
-      { name: "Dr. Amol Kumar Yadav", role: "Member" },
-      { name: "Dr. Bishnu Kharel", role: "Member" },
-      { name: "Dr. Tarannum Bano", role: "Member" },
-      { name: "Rachana Puri", role: "Member" },
-      { name: "Jiwan Narayan K. Chauhan", role: "Member" },
-      { name: "MD. Asrarul Ansari", role: "Member" },
-      { name: "Sandip B.K.", role: "Member" },
-      { name: "Satarohan Yadav", role: "Member" },
-      { name: "Shudib Shoni", role: "Member" },
-      { name: "Sakrila Ghale Gurung", role: "Member" },
-      { name: "Bhabishya Bista", role: "Member" },
-      { name: "Bijay Kumar Yadav", role: "Member" },
-      { name: "Gotri Nath", role: "Member" },
-      { name: "Pratibha Yadav", role: "Member" },
-      { name: "Praveen Bhattarai", role: "Member" },
-      { name: "Yatendra Yadav", role: "Member" },
-      { name: "Arjun Yadav", role: "Member" },
     ],
   },
 ];

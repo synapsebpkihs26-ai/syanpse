@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d6d"/>
+      <stop offset="0.5" stop-color="#7b2ff7"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0b1020"/>
+  <circle cx="300" cy="250" r="220" fill="url(#g)" filter="url(#blur)" opacity="0.85"/>
+  <circle cx="1300" cy="620" r="260" fill="url(#g)" filter="url(#blur)" opacity="0.7"/>
+  <circle cx="900" cy="180" r="150" fill="url(#g)" filter="url(#blur)" opacity="0.5"/>
+  <g fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2">
+    <path d="M60 720 C260 560, 420 860, 620 720 S980 580, 1160 720 S1400 860, 1540 720"/>
+    <path d="M90 760 C290 600, 450 900, 650 760 S1010 620, 1190 760 S1430 900, 1570 760"/>
+  </g>
+  <g font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial" fill="#ffffff">
+    <text x="80" y="420" font-size="72" font-weight="800">Synapse 2026</text>
+    <text x="80" y="480" font-size="28" opacity="0.9">Literature • Culture • Sports — Week-long inter-medical fest</text>
+  </g>
+</svg>

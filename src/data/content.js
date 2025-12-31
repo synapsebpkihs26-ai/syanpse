@@ -206,7 +206,7 @@ export const EVENT_CATEGORIES = [
         date: "Track finals schedule TBA",
         venue: "Stadium Track",
         image:
-          "https://images.unsplash.com/photo-1502810190503-8303352f6bcd?auto=format&fit=crop&w=900&q=80",
+          "https://unsplash.com/photos/a-person-bending-over-on-a-tennis-court-iAQRsJV3m-0",
       },
       {
         name: "Indoor & E-Sports Arena",

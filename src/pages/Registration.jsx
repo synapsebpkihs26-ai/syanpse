@@ -1,6 +1,12 @@
 import { useState } from "react";
 import Container from "../components/Container.jsx";
-import { googleFormUrl, idCardSections, registrationRules } from "../data/content.js";
+import {
+  googleFormUrl,
+  idCardSections,
+  keyDates,
+  registrationInfo,
+  registrationRules,
+} from "../data/content.js";
 
 export default function Registration() {
   const [agree, setAgree] = useState(false);
@@ -13,7 +19,10 @@ export default function Registration() {
             <p className="text-xs uppercase tracking-[0.25em] text-amber-100">Synapse 2026 · BPKIHS Dharan</p>
             <h1 className="text-4xl font-black leading-tight">Registration with Rules-first safety</h1>
             <p className="text-sm text-white/70">
-              Review the Rules & Regulations on the left, acknowledge them, then unlock the official Google Form on the right.
+              Review the Rules & Regulations, acknowledge them, and then proceed to the official registration form when it opens.
+            </p>
+            <p className="text-xs uppercase tracking-[0.2em] text-amber-100">
+              Registration deadline: {keyDates.registrationDeadline || "Coming soon"}
             </p>
           </div>
         </div>
@@ -97,16 +106,22 @@ export default function Registration() {
               <div className="mt-auto space-y-3 rounded-2xl bg-black/20 p-4 ring-1 ring-white/10">
                 <p className="text-xs uppercase tracking-[0.16em] text-amber-100">Bottom CTA</p>
                 <button
-                  disabled={!agree}
-                  onClick={() => window.open(googleFormUrl, "_blank")}
+                  disabled={!agree || !googleFormUrl}
+                  onClick={() => googleFormUrl && window.open(googleFormUrl, "_blank")}
                   className={`w-full rounded-full px-6 py-4 text-sm font-bold uppercase tracking-[0.1em] shadow-ember transition ${
-                    agree
+                    agree && googleFormUrl
                       ? "bg-gradient-to-r from-ember-500 via-amber-400 to-magenta text-black ring-2 ring-amber-200/70 hover:scale-[1.01]"
                       : "cursor-not-allowed bg-white/10 text-white/50 ring-1 ring-white/10"
                   }`}
                 >
-                  Register via Google Form
+                  {googleFormUrl ? "Register via Google Form" : "Registration coming soon"}
                 </button>
+                <p className="text-xs text-white/60">
+                  Confirmation numbers:{" "}
+                  {registrationInfo.confirmationNumbers.length
+                    ? registrationInfo.confirmationNumbers.join(", ")
+                    : "To be announced"}
+                </p>
               </div>
             </div>
           </div>

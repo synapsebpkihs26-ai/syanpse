@@ -59,6 +59,12 @@ export default function Home() {
                   Register now
                 </Link>
                 <Link
+                  to="/info-pack"
+                  className="rounded-full border border-amber-300/40 px-6 py-3 text-sm font-semibold text-amber-100 hover:bg-amber-500/10"
+                >
+                  View info pack
+                </Link>
+                <Link
                   to="/events"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white/80 hover:bg-white/5"
                 >

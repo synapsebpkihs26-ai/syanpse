@@ -1,73 +1,22 @@
 import { useState } from "react";
 import Container from "../components/Container.jsx";
 import InfoPopout from "../components/InfoPopout.jsx";
-import { sportsCategories } from "../data/content.js";
+import { culturalHighlights, literatureHighlights, sportsCategories } from "../data/content.js";
 
-const literatureEvents = [
-  {
-    title: "Quiz Competition",
-    description:
-      "A contest testing analytical and intellectual abilities, enhancing academic and cultural interaction.",
-  },
-  {
-    title: "Painting Competition",
-    description:
-      "A platform for students to express creativity and artistic skills through visual media.",
-  },
-  {
-    title: "Poem Recitation",
-    description:
-      "Allows students to showcase linguistic skills and expression through poetry performance.",
-  },
-  {
-    title: "Story Writing Competition",
-    description: "Encourages creative expression and narrative writing skills.",
-  },
-  {
-    title: "Debate Competition",
-    description:
-      "Develops public speaking, critical thinking, and structured argumentation skills.",
-  },
-  {
-    title: "Open Mic",
-    description:
-      "An open platform for poetry, storytelling, music, and spoken-word performances.",
-  },
+const culturalImages = [
+  "https://images.unsplash.com/photo-1496747611180-206a5c8c88cd?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1429371527702-1bfdc0eeea7d?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1519608425089-7f3bfa6f6bb8?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80",
 ];
 
-const culturalEvents = [
-  {
-    title: "Inauguration Ceremony & Ramp Walk",
-    description: "The official opening event of SYNAPSE, featuring a fashion runway.",
-    image:
-      "https://images.unsplash.com/photo-1496747611180-206a5c8c88cd?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    title: "DJ Night & Mask Party",
-    description:
-      "The grand finale cultural event with DJ performances and a mask party theme.",
-    image:
-      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    title: "Bhajan Night",
-    description: "A spiritual evening with devotional music held at the BPKIHS Mandir.",
-    image:
-      "https://images.unsplash.com/photo-1429371527702-1bfdc0eeea7d?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    title: "Unleashing Talents: Open Mic",
-    description: "A relaxed performance platform with a special tribute segment.",
-    image:
-      "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    title: "Inter-College Dancing & Singing Competition",
-    description: "Competitive performances showcasing musical and choreographic talents.",
-    image:
-      "https://images.unsplash.com/photo-1519608425089-7f3bfa6f6bb8?auto=format&fit=crop&w=600&q=80",
-  },
-];
+const culturalEvents = culturalHighlights.map((event, index) => ({
+  ...event,
+  image: culturalImages[index] || culturalImages[culturalImages.length - 1],
+}));
 
 export default function Events() {
   const [activeNote, setActiveNote] = useState(null);
@@ -116,7 +65,7 @@ export default function Events() {
             </div>
 
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {literatureEvents.map((event) => (
+              {literatureHighlights.map((event) => (
                 <div
                   key={event.title}
                   role="button"

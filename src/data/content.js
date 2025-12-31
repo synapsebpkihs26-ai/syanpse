@@ -3,7 +3,7 @@ import bannerOne from "../assets/picture/banner-1.svg";
 import bannerTwo from "../assets/picture/banner-2.svg";
 import bannerThree from "../assets/picture/banner-3.svg";
 
-export const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdfPk7N4yMZ2OVS3Noj0GR3jjn9PQUP6_sA5Ne7cKBmU0axsA/viewform?usp=publish-editor";
+export const googleFormUrl = null;
 
 export const heroSlides = [
   {
@@ -898,5 +898,707 @@ export const aboutSections = [
     longDescription:
       "Synapse 2026 is the flagship festival where BPKIHS and SWS unite to celebrate talent across athletics, performing arts, and innovation. It spotlights inter-college competitions, immersive concerts, and community gatherings that draw visitors from across the region. The 2026 edition promises bold production, inclusive participation, and unforgettable nights on campus.",
     logo: synapseLogo,
+  },
+];
+
+export const synapseOverview = {
+  title: "Synapse 2026",
+  host: "B. P. Koirala Institute of Health Sciences (BPKIHS)",
+  location: "Dharan, Nepal",
+  dates: "January 30 to February 7, 2026",
+  tagline:
+    "Nepal’s largest inter-medical college meet celebrating sports, intellect, creativity, and culture.",
+  summary:
+    "Synapse unites medical students nationwide for a week of healthy competition, leadership, teamwork, and cultural harmony across sports, arts, and social responsibility.",
+};
+
+export const keyDates = {
+  openingCeremony: "January 30, 2026",
+  closingCeremony: "February 7, 2026",
+  registrationDeadline: null,
+};
+
+export const registrationInfo = {
+  eligibility:
+    "Open to medical and allied health science students. Valid college ID is mandatory for participation.",
+  steps: [
+    "Complete online registration via the official Google Form.",
+    "Confirm participation by informing the organizers after registration.",
+  ],
+  confirmationNumbers: [],
+};
+
+export const feeCategories = [
+  {
+    category: "A",
+    events: ["Football", "Cricket", "Basketball", "Volleyball"],
+    baseFee: "2500/-",
+    sameCategoryFee: "+500/-",
+    differentCategoryFee: "+1000/-",
+  },
+  {
+    category: "B",
+    events: ["Futsal", "Cricksal"],
+    baseFee: "2000/-",
+    sameCategoryFee: "+500/-",
+    differentCategoryFee: "+500/-",
+  },
+  {
+    category: "C",
+    events: [
+      "Badminton",
+      "Table Tennis",
+      "Lawn Tennis",
+      "Athletics (Sprint, Relay, Long Jump, Triple Jump, Shot Put, Javelin Throw)",
+      "Gym Sports",
+    ],
+    baseFee: "2000/-",
+    sameCategoryFee: "+500/-",
+    differentCategoryFee: "+500/-",
+  },
+  {
+    category: "D",
+    events: ["Chess", "Carrom", "E-sports (Free Fire, PUBG Mobile)", "Indoor Games"],
+    baseFee: "1500/-",
+    sameCategoryFee: "+250/-",
+    differentCategoryFee: "+250/-",
+  },
+  {
+    category: "E",
+    events: [
+      "Literature Events",
+      "Cultural Events (registration required only for dance and singing)",
+    ],
+    baseFee: "1500/-",
+    sameCategoryFee: "+250/-",
+    differentCategoryFee: "+250/-",
+  },
+];
+
+export const feeNotes = [
+  "Each category has a base (individual) registration fee.",
+  "Base registration is determined by the highest category selected (A > B > C > D > E).",
+  "If you choose one more event from the same category, pay the same-category additional fee.",
+  "If you choose one more event from a different category, pay the different-category additional fee.",
+  "Participation in the Fashion Show Night (Day 1 Cultural Event) is mandatory for all participants.",
+  "All participants must bring traditional/cultural attire for Bhajan Night (Day 2 Cultural Event).",
+];
+
+export const paymentInfo = {
+  methods: ["Cash payment", "Bank transfer"],
+  accountName: null,
+  accountNumber: null,
+  securityDeposit:
+    "Each college should deposit Rs. 10,000/- as a security deposit, refundable after clearance.",
+};
+
+export const logisticsInfo = {
+  accommodation: [
+    "Accommodation details will be communicated in due course.",
+    "A list of available lodging options will be provided by the organizing committee.",
+    "For accommodation assistance, contact Abhay Shukla (986-3079433).",
+  ],
+  transportation: [
+    "Transportation will be arranged from committee-organized accommodations to the event venue.",
+  ],
+  food: [
+    "Participants will bear their own food expenses.",
+    "A canteen facility providing lunch and dinner will be available on campus.",
+    "Additional food outlets are available within the college premises and nearby.",
+  ],
+};
+
+export const sportsRules = [
+  {
+    name: "Football",
+    category: "Male",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Maximum of 2 teams per college.",
+          "Each team consists of 18 players (11 starting + 7 substitutes).",
+          "Tournament format will include group stages and/or knockout rounds depending on total teams and weather.",
+          "Teams must arrive at the venue at least 45 minutes before scheduled kick-off.",
+          "Matches follow FIFA laws; referee’s decision is final and binding.",
+          "Every team must wear its own jersey with visible jersey numbers.",
+          "Added or stoppage time will be determined and announced by the referee.",
+          "Knockout ties will be decided by penalty shootout or extra time as per referee.",
+          "Fines: Rs. 100 per yellow card and Rs. 200 per red card.",
+          "Match venues, schedules, and additional rules will be shared with registered teams.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Futsal",
+    category: "Male, Female",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Each team consists of 10 players (7 + 3 substitutes).",
+          "Matches are knockout under standard futsal/FIFA rules unless notified otherwise.",
+          "Teams must report at least 45 minutes prior to scheduled kick-off.",
+          "Decisions by match officials and organizers are final and binding.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Cricket",
+    category: "Boys",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Each team consists of 16 players (11 playing + 5 extras).",
+          "Each team must have jerseys with player numbers.",
+          "Competition will be league or knockout depending on team count.",
+          "Initial games: 12–14 overs; semifinals: 16 overs; final: 20 overs.",
+          "Played with a leather (dues) ball.",
+          "Innings break is 10 minutes.",
+          "Medical support will be provided.",
+          "Fixtures announced after team registration closes.",
+          "Teams must be present at least 30 minutes before the allotted time or risk disqualification.",
+          "Matches follow ICC rules; umpire’s decision is final.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Cricksal",
+    category: "Girls",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "One team per college.",
+          "Each team consists of 8 players (6 + 2).",
+          "Played with a tennis ball.",
+          "Format will be league or knockout depending on team count.",
+          "Innings break is 5 minutes.",
+          "All games except the final (8 overs) are 6 overs.",
+          "Matches follow ICC rules; organizers’ decision is final.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Basketball",
+    category: "Male, Female",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Each team consists of 10 players (5 playing + 5 substitutes).",
+          "League or knockout format depending on team count.",
+          "Four quarters of 7 minutes in league matches; 10 minutes from semifinals onward.",
+          "Extra time of 5 minutes if tied until a winner is decided.",
+          "Officials include referees, scorer, and timekeeper.",
+          "Each team must have jerseys with numbers.",
+          "Match timings will be informed prior to the match.",
+          "Substitutions allowed during stoppage with referee permission.",
+          "Teams must be present before the allotted time or risk disqualification.",
+          "Matches follow FIBA rules; officials’ decision is final.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Badminton",
+    category: "Boys, Girls",
+    sections: [
+      {
+        title: "Events",
+        items: [
+          "Singles: Maximum 2 participants per college (boys) and 2 participants (girls).",
+          "Doubles: Maximum 2 teams per college (boys) and 2 teams (girls).",
+        ],
+      },
+      {
+        title: "Rules",
+        items: [
+          "Matches follow Badminton World Federation rules; referee’s decision is final.",
+          "Format: group stage and knockouts or as decided by the organizers.",
+          "Venue: BPKIHS court or as decided by organizers.",
+          "Played with MAVI 350 shuttles.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Volleyball",
+    category: "Male, Female",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Each team consists of 9 players (6 playing + 3 substitutes).",
+          "Best of 3 sets; finals are best of 5 sets.",
+          "League or knockout format depending on team count.",
+          "Each team must have jerseys with numbers.",
+          "Match timings will be informed prior to the match.",
+          "Teams must be present before the allotted time or risk disqualification.",
+          "Players rotate clockwise when winning the right to serve.",
+          "Officials include first referee, second referee, scorer, and line judges.",
+          "Matches follow national volleyball rules; officials’ decision is final.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Table Tennis",
+    category: "Male, Female",
+    sections: [
+      {
+        title: "Events",
+        items: [
+          "Singles: Maximum 8 participants per college (4 male + 4 female).",
+          "Doubles: 2 female teams + 2 male teams per college.",
+          "Mixed Doubles: 1 pair per college.",
+        ],
+      },
+      {
+        title: "Rules",
+        items: [
+          "Players may bring their own bats; bats will also be provided by organizers.",
+          "Organizing committee’s decision is final in case of disputes.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Lawn Tennis",
+    category: "Open",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Open to medical and allied health science students aged 18–30 years.",
+          "Valid college ID mandatory; participants must be medically fit.",
+          "Individual registration per event; multiple events allowed.",
+          "Registration fee is non-refundable; on-spot entry subject to availability.",
+          "Proper sports attire compulsory; supportive gear allowed.",
+          "All events follow strict form and judging standards.",
+          "No alcohol, drugs, or unsportsmanlike behavior; judges’ decision final.",
+          "Spotters and medical support provided; organizers may modify rules.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Carrom Board",
+    category: "Male, Female",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "No limit on participants per college.",
+          "Winner of the toss breaks and chooses a color.",
+          "First shot must cross the baseline; striker must be placed on the baseline.",
+          "Pocketing your own piece continues your turn.",
+          "Pocketing opponent’s piece returns it to center.",
+          "Pocketing the striker is a foul and returns one of your pieces to center.",
+          "Player wins by pocketing all pieces after covering the queen.",
+          "Matches are played to 25 points or within a fixed time limit (e.g., 30 minutes).",
+          "Organizing committee’s decision is final in case of disputes.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Chess",
+    category: "Male, Female",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Maximum 5 participants per college.",
+          "Games are time-bounded and played on a knockout basis.",
+          "Touch-move rule applies.",
+          "In case of a draw, decision is made jointly by players and the organizing committee.",
+          "Organizing committee’s decision is final in case of disputes.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Athletics",
+    category: "Open",
+    sections: [
+      {
+        title: "General Rules",
+        items: [
+          "Participants must report at least 30 minutes before their scheduled event.",
+          "Athletes must wear proper sports uniform and bib numbers as allotted.",
+          "Participants may compete only in events for which they are registered.",
+          "Performance-enhancing drugs or unfair means are strictly prohibited.",
+          "Athletes must follow instructions given by officials, referees, and judges.",
+          "Unsportsmanlike behavior will result in disqualification.",
+        ],
+      },
+      {
+        title: "Sprint Events (100 m & 200 m)",
+        items: [
+          "Athletes must stay within their assigned lanes.",
+          "A false start leads to immediate disqualification.",
+          "The race starts only on the starter’s signal.",
+        ],
+      },
+      {
+        title: "Relay Event (4 × 100 m)",
+        items: [
+          "The baton must be passed within the exchange zone.",
+          "Dropped batons must be retrieved without obstructing others.",
+          "Each team must consist of exactly four athletes.",
+        ],
+      },
+      {
+        title: "Jumping Events (Long Jump, High Jump, Triple Jump)",
+        items: [
+          "A take-off is valid only when the athlete jumps before the take-off line.",
+          "Distance is measured from the nearest mark made in the sand.",
+          "In high jump, the bar must be cleared without knocking it off.",
+          "Each athlete is allowed a fixed number of attempts as decided by organizers.",
+        ],
+      },
+      {
+        title: "Throwing Events (Shot Put, Javelin Throw)",
+        items: [
+          "Throws must be made from within the designated throwing area only.",
+          "Athletes must not cross or touch the boundary line until the implement lands.",
+          "Only official equipment approved by organizers may be used.",
+          "Throws are measured from the first point of contact with the ground.",
+        ],
+      },
+      {
+        title: "Final Note",
+        items: [
+          "Officials’ and judges’ decisions are final and binding.",
+          "Any rule not covered will be governed by standard athletics regulations.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Gym Sports",
+    category: "Open",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Open to medical and allied health science students aged 18–30 years.",
+          "Valid college ID mandatory; participants must be medically fit.",
+          "Individual registration per event; multiple events allowed.",
+          "Registration fee is non-refundable; on-spot entry subject to availability.",
+          "Proper gym attire compulsory; supportive gear allowed.",
+          "All events follow strict form and judging standards.",
+          "No alcohol, drugs, or unsportsmanlike behavior; judges’ decision final.",
+          "Spotters and medical support provided; organizers may modify rules.",
+        ],
+      },
+    ],
+  },
+];
+
+export const esportsRules = [
+  {
+    name: "Free Fire",
+    sections: [
+      {
+        title: "Rules",
+        items: [
+          "Only students of registered medical colleges may participate; valid college ID required.",
+          "One player → one team → one college → one Free Fire account.",
+          "Only official Garena Free Fire / Free Fire MAX (latest version) is allowed.",
+          "Mobile phones only; emulators, PC, tablets, controllers, triggers, hacks, or mods are prohibited.",
+          "Matches will be played in custom rooms organized by the committee.",
+          "Scoring: Placement points + 1 point per kill.",
+          "Champion Rush in Grand Finals (80 points + next Booyah wins).",
+          "Official maps only; map selection by organizers.",
+          "Cheating, misconduct, or rule violation leads to immediate disqualification.",
+          "Organizers’ decisions are final and binding; schedule/rules may be modified.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "PUBG Mobile",
+    sections: [
+      {
+        title: "General Rules & Eligibility",
+        items: [
+          "Valid college ID card is mandatory for participation.",
+          "Game version: PUBG Mobile (latest official global version).",
+          "Squad format: 4 players + 1 substitute (optional).",
+          "No player may represent more than one team.",
+          "Players must use their own PUBG Mobile accounts.",
+          "Guest accounts are not allowed.",
+        ],
+      },
+      {
+        title: "Tie-Breaker Rule",
+        items: [
+          "If two or more teams have equal total points, rank is decided by total kill points.",
+          "Team with higher cumulative kills is placed higher in the standings.",
+          "If the tie persists, organizers’ decision is final.",
+        ],
+      },
+      {
+        title: "Match Settings",
+        items: ["Mode: Squad and TDM.", "Perspective: TPP.", "Maps: Erangel, Miramar, Sanhok."],
+      },
+      {
+        title: "Organizer Rights",
+        items: [
+          "Organizers may modify rules if necessary.",
+          "Organizers make final decisions in disputes.",
+          "Schedules may change due to unforeseen circumstances.",
+        ],
+      },
+    ],
+  },
+];
+
+export const literatureEventsDetailed = [
+  {
+    title: "Short Story Writing (English & Nepali)",
+    details: [
+      "Theme given on the spot.",
+      "Separate English and Nepali events.",
+      "Time limit: 1 hour.",
+      "No word limit.",
+      "Participants may join both languages.",
+      "No limit per college.",
+    ],
+  },
+  {
+    title: "Poetry Competition (English & Nepali)",
+    details: [
+      "Any topic.",
+      "Submit 2 hard copies (1 hour prior).",
+      "Participants may join both languages.",
+      "No limit per college.",
+    ],
+  },
+  {
+    title: "Debate Competition (English & Nepali)",
+    details: [
+      "Topic given at venue; prep time provided.",
+      "Parliamentary format; teams decided by lottery.",
+      "1 team per college per language.",
+      "Participants may join both languages.",
+      "Offensive/slang or community-targeted words prohibited.",
+    ],
+  },
+  {
+    title: "Extempore Speech",
+    details: [
+      "Topic given on stage.",
+      "Total time: 5 minutes.",
+      "Language: English or Nepali.",
+      "Offensive/slang or community-targeted words prohibited.",
+      "No limit per college.",
+    ],
+  },
+  {
+    title: "Quiz",
+    details: [
+      "Team of 3 participants.",
+      "Multiple teams allowed per college.",
+      "Top 4 teams qualify for finals.",
+      "Rounds include: medical, general, current affairs, audio-visual, and rapid fire.",
+    ],
+  },
+  {
+    title: "Spell Bee",
+    details: [
+      "Team of 3 participants.",
+      "Multiple teams allowed per college.",
+      "Top 4 teams qualify for finals.",
+    ],
+  },
+  {
+    title: "Photography",
+    details: [
+      "Theme announced later.",
+      "1 photo per participant.",
+      "Basic edits allowed; no filters, borders, or watermarks.",
+      "Judging: 60% judges + 40% social media likes.",
+      "Photos to be emailed with ID.",
+      "No limit per college.",
+    ],
+  },
+  {
+    title: "Painting & Sketching",
+    details: [
+      "Theme given on the spot (nature/real life).",
+      "Participants bring own materials.",
+      "Judging: 60% judges + 40% social media response.",
+      "No limit per college.",
+    ],
+  },
+];
+
+export const culturalSchedule = [
+  {
+    day: "Day 1",
+    title: "हाम्रो संस्कृति, हाम्रो अभिमान – A Ramp Walk Show",
+    details: [
+      "Fashion show based on a theme chosen by participants.",
+      "Participants must arrange costumes, makeup, and accessories.",
+      "Participation open to solo performers or groups (maximum 6 participants per group).",
+      "Participation is compulsory for all colleges participating in Synapse 2026.",
+    ],
+  },
+  {
+    day: "Day 2",
+    title: "आराधना – A Spiritual Evening",
+    details: [
+      "Acoustic Bhajan session in the premises of Mandir.",
+      "Interested participants can submit names for performance.",
+    ],
+  },
+  {
+    day: "Day 3 & Day 4",
+    title: "ताल-ताण्डव – A Portrait of Inner Voice",
+    details: [
+      "Two-day talent showcase for singing and dancing performances.",
+      "Solo singing performances; bands may participate with prior equipment notice.",
+      "Solo and group dance performances (maximum 12 in a group).",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "आकाशवाणी – A Flying Lantern Show",
+    details: [
+      "Group sky lantern release.",
+      "Wishes and messages on lanterns.",
+      "Vibrant and festive atmosphere.",
+    ],
+  },
+  {
+    day: "Day 6 & Day 7",
+    title: "बैठक – Bonfire and Melodies",
+    details: [
+      "Open Mic session for singing, dancing, poetry, stand-up comedy, and more.",
+      "On-spot registration for performances.",
+    ],
+  },
+  {
+    day: "Day 8",
+    title: "Mask Party and DJ Night",
+    details: [
+      "High-energy celebration with music, dance, and a masked vibe.",
+      "DJ music and dance floor.",
+      "Mask party with creative costumes.",
+    ],
+  },
+  {
+    day: "Day 9",
+    title: "D Night – The Ultimate Concert",
+    details: [
+      "Grand musical evening featuring live performances by talented artists.",
+    ],
+  },
+];
+
+export const culturalJudgingNote =
+  "A panel of professional judges outside the college will be assigned. All decisions by the judges are final.";
+
+export const contactDetails = [
+  { name: "Prajwal Bikram Khand", role: "Organizing Chairperson", phone: "984-0043578" },
+  { name: "Dr. Thaneswor Joshi", role: "Organizing Treasurer", phone: "986-8713273" },
+  { name: "Prashant Shahi", role: "Sports Lead", phone: "986-8316550" },
+  { name: "Dr. Hritik Raj Paswan", role: "Cultural Lead", phone: "984-0301506" },
+  { name: "Aarjav Sharma", role: "Literature Lead", phone: "980-2794740" },
+  { name: "Smita Paudel", role: "Registration Lead", phone: "980-8157011" },
+  { name: "Abhay Shukla", role: "Lodging Lead", phone: "986-3079433" },
+  { name: "Abhishek Basnet", role: "Fooding Lead", phone: "986-0917500" },
+];
+
+export const aboutDharan = {
+  summary:
+    "Dharan is a vibrant eastern Nepal city at the foothills of the Himalaya, known for its clean streets, welcoming communities, and pilgrimage sites.",
+  sections: [
+    {
+      title: "Dharan Town",
+      body:
+        "Bhedetar hill and Charles Point offer sweeping views of Dharan, Itahari, and Biratnagar. The Tamor and Saptakoshi rivers nearby are popular with rafting enthusiasts.",
+    },
+    {
+      title: "Famous For",
+      body:
+        "Dharan is home to BPKIHS, more than 25 temples, and scenic gateways to Nepal’s tea-growing region of Dhankuta.",
+    },
+    {
+      title: "How to Reach",
+      body:
+        "Dharan is about 20 minutes by bus from Itahari, which is well connected to major cities including Kathmandu and Pokhara.",
+    },
+    {
+      title: "Places to Visit",
+      body:
+        "Highlights include Dantakali, Budhasubba, Pindeshwori, Panchakanya temples, Bhedetar, Skywalk, Nameste Jharana, Namje Village, Dhankuta/Hile, Raja Rani Hill, Koshitapu, and Ilam.",
+    },
+  ],
+};
+
+export const literatureHighlights = [
+  {
+    title: "Short Story Writing",
+    description: "English & Nepali categories with on-the-spot themes and a 1-hour limit.",
+  },
+  {
+    title: "Poetry Competition",
+    description: "Any topic, with hard-copy submissions and bilingual participation.",
+  },
+  {
+    title: "Debate Competition",
+    description: "Parliamentary format with topics shared at the venue.",
+  },
+  {
+    title: "Extempore Speech",
+    description: "Five-minute speeches in English or Nepali on a surprise topic.",
+  },
+  {
+    title: "Quiz & Spell Bee",
+    description: "Team-based knowledge rounds with finals for top qualifiers.",
+  },
+  {
+    title: "Photography & Sketching",
+    description: "Creative showcases with judging and social media engagement.",
+  },
+];
+
+export const culturalHighlights = [
+  {
+    title: "Ramp Walk Show",
+    description: "Day 1 cultural kickoff celebrating heritage and creativity.",
+  },
+  {
+    title: "Bhajan Night",
+    description: "Day 2 acoustic Bhajan session at the Mandir.",
+  },
+  {
+    title: "Tal-Tandav Showcase",
+    description: "Day 3 & 4 singing and dancing performances.",
+  },
+  {
+    title: "Flying Lantern Show",
+    description: "Day 5 sky lantern celebration.",
+  },
+  {
+    title: "Bonfire & Melodies",
+    description: "Day 6 & 7 open mic sessions and performances.",
+  },
+  {
+    title: "Mask Party & DJ Night",
+    description: "Day 8 masked celebration with DJ sets.",
+  },
+  {
+    title: "D Night Concert",
+    description: "Day 9 grand concert finale.",
   },
 ];

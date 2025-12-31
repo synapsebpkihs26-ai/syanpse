@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Container from "../components/Container.jsx";
-import { socialLinks } from "../data/content.js";
+import { contactDetails, socialLinks } from "../data/content.js";
 
 const formEndpoint = "https://formspree.io/f/mldryzyy";
 
@@ -112,8 +112,16 @@ export default function Contact() {
               <p className="text-xs uppercase tracking-[0.18em] text-amber-100">Official contact</p>
               <div className="space-y-2 text-sm text-white/70">
                 <p>📍 BPKIHS, Dharan, Nepal</p>
-                <p>📧 synapse@bpkihs.edu</p>
-                <p>📞 +977-9812345678</p>
+                <p>📧 To be announced</p>
+                <p>📞 To be announced</p>
+              </div>
+
+              <div className="space-y-2 text-sm text-white/70">
+                {contactDetails.map((person) => (
+                  <p key={person.name}>
+                    {person.name} · {person.role} · {person.phone}
+                  </p>
+                ))}
               </div>
 
               <div className="flex flex-wrap gap-2">

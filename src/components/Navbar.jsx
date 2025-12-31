@@ -8,6 +8,7 @@ import bpkihsLogo from "../assets/bpkihs-logo.jpeg";
 const links = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
+  { label: "Info Pack", to: "/info-pack" },
   { label: "Events", to: "/events" },
   { label: "Registration", to: "/registration" },
   { label: "Team", to: "/team" },

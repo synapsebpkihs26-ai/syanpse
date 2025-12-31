@@ -3,12 +3,16 @@ import { socialLinks, socialSpotlightPosts } from "../data/content.js";
 
 export default function SocialSpotlight() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [embedState, setEmbedState] = useState({ loaded: false, timedOut: false });
+  const [embedState, setEmbedState] = useState({
+    loaded: false,
+    timedOut: false,
+    failed: false,
+  });
   const totalPosts = socialSpotlightPosts.length;
   const activePost = socialSpotlightPosts[activeIndex];
 
   useEffect(() => {
-    setEmbedState({ loaded: false, timedOut: false });
+    setEmbedState({ loaded: false, timedOut: false, failed: false });
     const timer = setTimeout(() => {
       setEmbedState((prev) => ({ ...prev, timedOut: true }));
     }, 3500);
@@ -16,7 +20,7 @@ export default function SocialSpotlight() {
     return () => clearTimeout(timer);
   }, [activeIndex]);
 
-  const showFallback = embedState.timedOut && !embedState.loaded;
+  const showFallback = embedState.failed || (embedState.timedOut && !embedState.loaded);
 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev - 1 + totalPosts) % totalPosts);
@@ -47,7 +51,8 @@ export default function SocialSpotlight() {
               loading="lazy"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              onLoad={() => setEmbedState({ loaded: true, timedOut: false })}
+              onLoad={() => setEmbedState({ loaded: true, timedOut: false, failed: false })}
+              onError={() => setEmbedState({ loaded: false, timedOut: true, failed: true })}
             />
             {showFallback ? (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-slate-950/70 p-6 text-center">

@@ -377,7 +377,7 @@ export const sportsCategories = [
       "Javelin Throw",
     ],
     image:
-      "https://images.unsplash.com/photo-1502810190503-8303352f6bcd?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photos/a-person-bending-over-on-a-tennis-court-iAQRsJV3m-0",
     summary:
       "Race-day heats, baton exchanges, powerful throws, and precision jumps under the stadium lights.",
   },

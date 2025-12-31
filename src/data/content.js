@@ -377,7 +377,7 @@ export const sportsCategories = [
       "Javelin Throw",
     ],
     image:
-      "https://images.unsplash.com/photos/a-person-bending-over-on-a-tennis-court-iAQRsJV3m-0",
+      "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1400&q=80",
     summary:
       "Race-day heats, baton exchanges, powerful throws, and precision jumps under the stadium lights.",
   },
@@ -387,7 +387,7 @@ export const sportsCategories = [
     description: "Fast-paced rallies and board strategy within the indoor arena.",
     items: ["Table Tennis (Singles / Doubles)", "Badminton (Singles / Doubles)", "Chess", "Carrom"],
     image:
-      "https://images.unsplash.com/photo-1485395578879-6ba080eeaea5?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80",
     summary:
       "Close-quarters excitement with racket duels, tactical chess endgames, and friendly carrom battles.",
   },

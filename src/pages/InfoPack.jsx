@@ -129,7 +129,7 @@ export default function InfoPack() {
                     : "cursor-not-allowed bg-white/10 text-white/50 ring-1 ring-white/10"
                 }`}
               >
-                {googleFormUrl ? "Open Google Form" : "Coming soon"}
+                { "https://www.synapse2026.bpkihs.edu/registration" ? "Open Google Form" : "Coming soon"}
               </button>
               <div className="mt-4">
                 <p className="text-sm font-semibold text-white">Confirmation numbers</p>

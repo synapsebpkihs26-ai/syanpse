@@ -2,7 +2,8 @@ import { useState } from "react";
 import Container from "../components/Container.jsx";
 import { contactDetails, socialLinks } from "../data/content.js";
 
-const formEndpoint = "https://formspree.io/f/mldryzyy";
+const formEndpoint = "https://formspree.io/f/mqeaqojo";
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -112,8 +113,6 @@ export default function Contact() {
               <p className="text-xs uppercase tracking-[0.18em] text-amber-100">Official contact</p>
               <div className="space-y-2 text-sm text-white/70">
                 <p>📍 BPKIHS, Dharan, Nepal</p>
-                <p>📧 To be announced</p>
-                <p>📞 To be announced</p>
               </div>
 
               <div className="space-y-2 text-sm text-white/70">

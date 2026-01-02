@@ -10,6 +10,14 @@ import {
 export default function Registration() {
   const [agree, setAgree] = useState(false);
 
+  const handleRegisterClick = () => {
+    if (googleFormUrl) {
+      window.open(googleFormUrl, "_blank");
+    } else {
+      alert("Registration will open soon. Please check back later.");
+    }
+  };
+
   return (
     <section className="py-12">
       <Container className="space-y-10">
@@ -34,7 +42,7 @@ export default function Registration() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[1.1fr,0.9fr]">
-          {/* LEFT: Rules */}
+          {/* Rules */}
           <div className="glass relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <div
               className="absolute inset-0 bg-gradient-to-br from-ember-500/12 via-magenta/10 to-plasma/12"
@@ -88,7 +96,7 @@ export default function Registration() {
             </div>
           </div>
 
-          {/* RIGHT: ID Card + CTA */}
+          {/* ID Card + CTA */}
           <div className="glass relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <div
               className="absolute inset-0 bg-gradient-to-br from-plasma/12 via-magenta/10 to-ember-500/12"
@@ -113,3 +121,57 @@ export default function Registration() {
                     className="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10"
                   >
                     <p className="text-sm font-semibold text-white">
+                      {section.title}
+                    </p>
+                    <ul className="mt-2 space-y-1 text-[13px] text-white/75">
+                      {section.points.map((point) => (
+                        <li key={point} className="flex gap-2">
+                          <span
+                            className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-amber-300"
+                            aria-hidden
+                          />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="mt-auto space-y-4 rounded-2xl bg-black/20 p-4 ring-1 ring-white/10">
+                <p className="text-xs uppercase tracking-[0.16em] text-amber-100">
+                  Bottom CTA
+                </p>
+
+                <label className="flex items-center gap-3 text-sm font-semibold text-amber-100">
+                  <input
+                    type="checkbox"
+                    checked={agree}
+                    onChange={(e) => setAgree(e.target.checked)}
+                    className="h-5 w-5 rounded border-white/30 bg-black/50 text-amber-400 focus:ring-amber-300"
+                  />
+                  I agree to the Rules & Regulations
+                </label>
+
+                <button
+                  disabled={!agree}
+                  onClick={handleRegisterClick}
+                  className={`w-full rounded-full px-6 py-4 text-sm font-bold uppercase tracking-[0.1em] shadow-ember transition ${
+                    agree
+                      ? "bg-gradient-to-r from-ember-500 via-amber-400 to-magenta text-black ring-2 ring-amber-200/70 hover:scale-[1.01]"
+                      : "cursor-not-allowed bg-white/10 text-white/50 ring-1 ring-white/10"
+                  }`}
+                >
+                  {googleFormUrl
+                    ? "Register via Google Form"
+                    : "Registration coming soon"}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}

@@ -121,10 +121,10 @@ export default function InfoPack() {
               </p>
               <button
                 type="button"
-                disabled={!googleFormUrl}
-                onClick={() => googleFormUrl && window.open(googleFormUrl, "_blank")}
+                disabled={!"https://www.synapse2026.bpkihs.edu/registration"}
+                onClick={() => "https://www.synapse2026.bpkihs.edu/registration" && window.open("https://www.synapse2026.bpkihs.edu/registration", "_blank")}
                 className={`mt-4 w-full rounded-full px-5 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition ${
-                  googleFormUrl
+                  "https://www.synapse2026.bpkihs.edu/registration"
                     ? "bg-gradient-to-r from-ember-500 via-amber-400 to-magenta text-black shadow-ember ring-2 ring-amber-200/70 hover:scale-[1.01]"
                     : "cursor-not-allowed bg-white/10 text-white/50 ring-1 ring-white/10"
                 }`}

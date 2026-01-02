@@ -3,7 +3,7 @@ import bannerOne from "../assets/picture/banner-1.svg";
 import bannerTwo from "../assets/picture/banner-2.svg";
 import bannerThree from "../assets/picture/banner-3.svg";
 
-export const googleFormUrl = null;
+export const googleFormUrl ="https://docs.google.com/forms/d/e/1FAIpQLSdfPk7N4yMZ2OVS3Noj0GR3jjn9PQUP6_sA5Ne7cKBmU0axsA/viewform?usp=publish-editor" ;
 
 export const heroSlides = [
   {

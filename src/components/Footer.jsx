@@ -7,7 +7,7 @@ export default function Footer() {
       <Container className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-amber-200/80">Synapse 2026</p>
-          <p className="text-lg font-black">BPKIHS • Student Welfare Society</p>
+          <p className="text-lg font-black">BPKIHS • Student's Welfare Society</p>
           <p className="text-sm text-white/60">Dharan, Nepal</p>
         </div>
         <div className="flex flex-wrap gap-3">

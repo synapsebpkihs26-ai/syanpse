@@ -1508,6 +1508,8 @@ export const culturalJudgingNote =
   "A panel of professional judges outside the college will be assigned. All decisions by the judges are final.";
 
 export const contactDetails = [
+   { name: "Nabraj Kumar Dev", role: "President, Students' Welfare Society", phone: "+977 9808651389" },
+  { name: "Subin Kumar Sah", role: "General Secretary, Students' Welfare Society ", phone: "+977 9844420535 +977 9814805523" },
   { name: "Prajwal Bikram Khand", role: "Organizing Chairperson", phone: "984-0043578" },
   { name: "Dr. Thaneswor Joshi", role: "Organizing Treasurer", phone: "986-8713273" },
   { name: "Prashant Shahi", role: "Sports Lead", phone: "986-8316550" },

@@ -60,7 +60,6 @@ export default function Events() {
                 <p className="text-xs uppercase tracking-[0.2em] text-amber-100">
                   Literature Events
                 </p>
-                <h2 className="text-2xl font-black">Card-based showcase of every contest</h2>
               </div>
             </div>
 
@@ -98,7 +97,6 @@ export default function Events() {
                 <p className="text-xs uppercase tracking-[0.2em] text-amber-100">
                   Cultural Events
                 </p>
-                <h2 className="text-2xl font-black">Bold circles and expressive headlines</h2>
               </div>
             </div>
 
@@ -150,7 +148,6 @@ export default function Events() {
                 <p className="text-xs uppercase tracking-[0.2em] text-amber-100">
                   Sports Events
                 </p>
-                <h2 className="text-2xl font-black">Five subsections in vivid tiles</h2>
                 <p className="text-sm text-white/70">
                   Outdoor grounds, indoor arenas, athletics, e-sports, and special recreational
                   slots all live here.

@@ -889,7 +889,7 @@ export const aboutSections = [
     title: "Student Welfare Society",
     body: "Student-led body that shapes campus culture, support, and memorable experiences.",
     longDescription:
-      "The Student Welfare Society (SWS) is the heartbeat of campus life, championing student voices and well-being. It organizes cultural showcases, social outreach, and mentoring support so every student feels included. SWS steers collaborative initiatives with faculty and administration to keep the campus vibrant, supportive, and ready for landmark events like Synapse.",
+      "Students' Welfare Society is a non-political, non profitable organization representing all the students of BPKIHS recognized by 32nd  BPKIHS Senate. SWS is highly determined in protecting the rights and working for the welfare of the students.",
     logo: swsLogo,
   },
   {

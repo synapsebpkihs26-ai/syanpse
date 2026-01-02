@@ -47,7 +47,7 @@ export default function Navbar() {
             </p>
             <p className="text-lg font-black text-white">BPKIHS</p>
             <p className="text-xs text-white/60">
-              Students Welfare Society
+              Student's Welfare Society
             </p>
           </div>
         </Link>

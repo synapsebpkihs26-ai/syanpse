@@ -2,27 +2,77 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Container from "../components/Container.jsx";
 
 export default function Sponsors() {
-  const sponsorImages = useMemo(() => {
+  const sponsors = useMemo(() => {
     const modules = import.meta.glob("../assets/imagess/*.png", {
       eager: true,
       import: "default",
     });
 
-    return Object.entries(modules)
+    // Sorted image paths (ensures 1.png, 2.png ... are in correct order)
+    const sortedImages = Object.entries(modules)
       .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
       .map(([, src]) => src);
+
+    // ✅ Your sponsor names (1..41)
+    const names = [
+      "ARYA PHARMALAB PVT. LTD.",
+      "MANGALAM TRADERS",
+      "BIOROME DERMACARE",
+      "TRUE DERMA",
+      "VITAL SUTURES",
+      "EVEREST PARENTERALS",
+      "GLISTEN LIFESCIENCES",
+      "TEAM 11",
+      "LIVE BAKERS",
+      "CHIYA SANGAM",
+      "MARUTI PHARMA PVT. LTD.",
+      "MAGNUS PHARMACEUTICALS",
+      "GLENMARK PHARMACEUTICALS",
+      "DEURALI JANTA PHARMACEUTICALS",
+      "KAMANA DAIRY & BAKERY CAFE",
+      "SARPAT MART HOTEL DHARAN",
+      "VIBRANT",
+      "ANEE",
+      "KARL STORZ",
+      "ZYDUS",
+      "Q MED",
+      "LABLINE TRADERS",
+      "QUEST PHARMACEUTICALS P. LTD.",
+      "PRIME PHARMACEUTICALS PVT. LTD.",
+      "ASIAN PHARMACEUTICALS",
+      "K.K. INTERNATIONAL SCHOOL",
+      "MISSION DHARAN",
+      "HOTEL WHITE DOVE",
+      "NATIONAL HEALTHCARE",
+      "TORRENT PHARMA",
+      "HQ MEDS",
+      "HQ MEDS",
+      "TIAGO EV",
+      "HYUNDAI",
+      "SAMIKSHA PUBLICATION",
+      "LAXMI SUNRISE BANK",
+      "SUBISU LIMITED",
+      "BIRAT TELEVISION",
+      "VIJAYAPUR FM",
+      "SWASTHYA KHABAR PATRIKA",
+      "BELLA PROCESSED DRINKING WATER",
+    ];
+
+    // Combine into a single array so src + name always stay aligned
+    return sortedImages.map((src, i) => ({
+      src,
+      name: names[i] ?? `Sponsor ${i + 1}`, // fallback if more images than names
+    }));
   }, []);
 
-  const sponsorNames = useMemo(
-    () => sponsorImages.map((_, index) => `Sponsor ${index + 1}`),
-    [sponsorImages],
-  );
+  const sponsorImages = useMemo(() => sponsors.map((s) => s.src), [sponsors]);
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [activeSponsor, setActiveSponsor] = useState(null);
   const timeoutRef = useRef(null);
 
+  // Preload images
   useEffect(() => {
     sponsorImages.forEach((src) => {
       const image = new Image();
@@ -30,6 +80,7 @@ export default function Sponsors() {
     });
   }, [sponsorImages]);
 
+  // Random featured sponsor rotation
   useEffect(() => {
     if (!sponsorImages.length) return;
 
@@ -55,8 +106,8 @@ export default function Sponsors() {
     };
   }, [sponsorImages]);
 
-  const activeLogo = sponsorImages[activeIndex];
-  const activeName = sponsorNames[activeIndex];
+  const activeLogo = sponsors[activeIndex]?.src;
+  const activeName = sponsors[activeIndex]?.name;
 
   return (
     <section className="py-12">
@@ -89,7 +140,7 @@ export default function Sponsors() {
                 {activeLogo && (
                   <img
                     src={activeLogo}
-                    alt={activeName}
+                    alt={activeName || "Sponsor"}
                     className={`h-56 w-[92%] object-contain transition-opacity duration-500 sm:h-60 sm:w-[85%] lg:h-64 lg:w-[75%] ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
@@ -113,21 +164,19 @@ export default function Sponsors() {
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              {sponsorImages.map((src, index) => (
+              {sponsors.map((sponsor) => (
                 <button
-                  key={src}
+                  key={sponsor.src}
                   type="button"
-                  onClick={() =>
-                    setActiveSponsor({ src, name: sponsorNames[index] })
-                  }
+                  onClick={() => setActiveSponsor(sponsor)}
                   className="flex w-full flex-col items-center justify-center gap-4 rounded-2xl bg-white/5 p-6 text-center ring-1 ring-white/10 hover:bg-white/10 transition"
                 >
                   <span className="text-sm font-semibold text-white">
-                    {sponsorNames[index]}
+                    {sponsor.name}
                   </span>
                   <img
-                    src={src}
-                    alt={sponsorNames[index]}
+                    src={sponsor.src}
+                    alt={sponsor.name}
                     loading="lazy"
                     className="h-36 w-full object-contain sm:h-40 lg:h-44"
                   />

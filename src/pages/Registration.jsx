@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Container from "../components/Container.jsx";
+import BrochureButton from "../components/BrochureButton.jsx";
 import {
   googleFormUrl,
   idCardSections,
@@ -38,6 +39,7 @@ export default function Registration() {
               Registration deadline:{" "}
               {keyDates.registrationDeadline || "Coming soon"}
             </p>
+            <BrochureButton className="mt-4" />
           </div>
         </div>
 

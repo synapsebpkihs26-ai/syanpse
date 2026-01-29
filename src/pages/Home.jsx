@@ -4,6 +4,7 @@ import HeroSlider from "../components/HeroSlider.jsx";
 import SocialSpotlight from "../components/SocialSpotlight.jsx";
 import Container from "../components/Container.jsx";
 import InfoPopout from "../components/InfoPopout.jsx";
+import BrochureButton from "../components/BrochureButton.jsx";
 import { eventCategories } from "../data/content.js";
 
 export default function Home() {
@@ -71,6 +72,7 @@ export default function Home() {
                   Explore events
                 </Link>
               </div>
+              <BrochureButton className="pt-2" />
 
               <div className="mt-4 grid gap-3 sm:grid-cols-3">
                 {["Literature", "Culture", "Sports"].map((item) => (

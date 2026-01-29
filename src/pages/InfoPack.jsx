@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 import Container from "../components/Container.jsx";
+import BrochureButton from "../components/BrochureButton.jsx";
+import brochurePdf from "../assets/brouchre/brouchre.pdf";
 import {
   aboutDharan,
   contactDetails,
@@ -65,6 +67,32 @@ export default function InfoPack() {
             </div>
           </div>
         </div>
+
+        <section className="space-y-4">
+          <div>
+            <p className="text-xs uppercase tracking-[0.25em] text-amber-100">Brochure</p>
+            <h2 className="text-2xl font-black">Download or preview the Synapse brochure</h2>
+          </div>
+          <div className="glass relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div
+              className="absolute inset-0 bg-gradient-to-br from-plasma/12 via-magenta/10 to-ember-500/12"
+              aria-hidden
+            />
+            <div className="relative space-y-4">
+              <p className="text-sm text-white/70">
+                Browse the official Synapse 2026 brochure or save it for offline sharing.
+              </p>
+              <BrochureButton />
+              <div className="overflow-hidden rounded-2xl bg-black/40 ring-1 ring-white/10">
+                <iframe
+                  title="Synapse 2026 Brochure"
+                  src={brochurePdf}
+                  className="h-[520px] w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="space-y-4">
           <div>

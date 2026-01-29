@@ -11,6 +11,7 @@ import Confirmation from "./pages/Confirmation.jsx";
 import Team from "./pages/Team.jsx";
 import Contact from "./pages/Contact.jsx";
 import InfoPack from "./pages/InfoPack.jsx";
+import Sponsors from "./pages/Sponsors.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/info-pack" element={<InfoPack />} />
+        <Route path="/sponsors" element={<Sponsors />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>

@@ -10,6 +10,7 @@ const links = [
   { label: "About", to: "/about" },
   { label: "Info Pack", to: "/info-pack" },
   { label: "Events", to: "/events" },
+  { label: "Sponsors", to: "/sponsors" },
   { label: "Registration", to: "/registration" },
   { label: "Team", to: "/team" },
   { label: "Contact", to: "/contact" },

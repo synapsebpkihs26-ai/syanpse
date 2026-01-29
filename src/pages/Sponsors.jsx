@@ -86,7 +86,7 @@ export default function Sponsors() {
             />
             <div className="relative flex flex-col items-center gap-6">
               <p className="text-xs uppercase tracking-[0.2em] text-amber-100">
-                Logo shuffle
+                OUR SPONSORS
               </p>
               <div className="flex h-48 w-full items-center justify-center rounded-3xl bg-black/40 ring-1 ring-white/10">
                 {activeLogo && (
@@ -100,7 +100,7 @@ export default function Sponsors() {
                 )}
               </div>
               <p className="text-sm text-white/70">
-                Featuring 41 partners who make Synapse 2026 possible.
+                FEATURING ALL PARTNERS WHO MAKE SYNAPSE 2026 POSSIBLE.
               </p>
             </div>
           </div>
